@@ -1,0 +1,99 @@
+.foodLogo {
+  width: 110px;
+  height: 40px;
+}
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.basketIcon {
+  width: 30px;
+  height: 30px;
+}
+.searchIcon {
+  width: 30px;
+  height: 30px;
+}
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: rgb(33, 22, 43);
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navbar button {
+  background: transparent;
+  font-size: 16px;
+  color: rgb(8, 7, 7);
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.navbar button:hover {
+  background: #fff4a2;
+  color: rgb(0, 0, 0);
+}
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid black;
+}
+.navbar-search-icon {
+  position: relative;
+}
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 5px;
+  top: -5px;
+  right: -4px;
+}
+@media (max-width: 1050px) {
+  .navbar-menu {
+    gap: 20px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-menu {
+    display: none;
+  }
+  .foodLogo {
+    width: 90px;
+  }
+  .basketIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .searchIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .navbar button {
+    background: transparent;
+    font-size: 10px;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
